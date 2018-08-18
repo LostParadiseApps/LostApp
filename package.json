@@ -1,0 +1,23 @@
+{
+  "name": "lostapp",
+  "version": "1.0.0",
+  "description": "Потерянный Рай BETA",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LostParadiseApps/LostApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LostParadiseApps/LostApp/issues"
+  },
+  "homepage": "https://github.com/LostParadiseApps/LostApp#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
