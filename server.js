@@ -3,6 +3,7 @@ const http = require('http').Server(app);
 const io = require('socket.io')(http);
 
 
+
 app.get('/', function(req, res){
   console.log(req);
   console.log(res);
@@ -18,9 +19,16 @@ app.get('/client.js', function(req, res){
 app.get('/pixi.js', function(req, res){
   console.log(req);
   console.log(res);
-    res.sendFile(__dirname + '/public/Js/client.js');
+    res.sendFile(__dirname + '/public/Js/pixi.js');
 
 });
+app.get('/style.css', function(req, res){
+  console.log(req);
+  console.log(res);
+    res.sendFile(__dirname + '/public/css/style.css');
+});
+
+
 
 
 http.listen(80, function(){console.log('Прослушка *:80');});
