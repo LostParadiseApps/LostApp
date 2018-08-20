@@ -5,26 +5,18 @@ const io = require('socket.io')(http);
 
 
 app.get('/', function(req, res){
-  console.log(req);
-  console.log(res);
   res.sendFile(__dirname + '/public/html/index.html');
 });
 
 app.get('/client.js', function(req, res){
-  console.log(req);
-  console.log(res);
     res.sendFile(__dirname + '/public/Js/client.js');
 
 });
 app.get('/pixi.js', function(req, res){
-  console.log(req);
-  console.log(res);
     res.sendFile(__dirname + '/public/Js/pixi.js');
 
 });
 app.get('/style.css', function(req, res){
-  console.log(req);
-  console.log(res);
     res.sendFile(__dirname + '/public/css/style.css');
 });
 

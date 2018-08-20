@@ -1,12 +1,12 @@
 var app = new PIXI.Application(800, 600, {backgroundColor : 0x1099bb});
 var container = document.getElementById("LostApp");
     if (container !== null) {
-        container.appendChild(elem);
+        container.appendChild(app.view);
     } else console.log("aaaaa");
 //document.body.appendChild(app.view);
 
 // create a new Sprite from an image path
-var bunny = PIXI.Sprite.fromImage('required/assets/basics/bunny.png')
+var bunny = PIXI.Sprite.fromImage('http://rootgames.org/templates/rgames/img/logo.png')
 
 // center the sprite's anchor point
 bunny.anchor.set(0.5);
